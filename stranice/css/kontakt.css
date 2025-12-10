@@ -1,0 +1,270 @@
+body {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5efee;
+    animation: fadeIn 2s ease-in;
+}
+h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #A65069;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    background-color: #ab4b69;
+    padding: 10px 0;
+    position: relative;
+    height: 70px;
+    
+}
+
+.logo{
+    margin-right: auto;
+    margin-top: -15px;
+    width: 70px;
+    height: 70px;
+    object-fit:cover;
+    border-radius:8px ;
+}
+
+
+nav .stranice {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+
+}
+
+
+nav .stranice li {
+    margin: 0 15px;
+}
+
+nav .stranice a {
+    text-decoration: none;
+    color: #f5efee;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav .stranice a:hover {
+    color: #ffbdb4;
+}
+#rezultat{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ab4b69;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+     background-color: #ab4b69;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+p {
+    margin: 0 10%;
+    text-align: center;
+    font-size: 16px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+input[type="text"], textarea {
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    color: #333;
+ }
+
+ h3 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 25px;
+    }
+
+
+.footer{
+    background-color: #A65069;
+    padding: 20px 40px;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    position: relative;
+    color: #fff;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left p {
+    margin-left: auto;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 60px;
+    color: #ffeaea;
+}
+
+.footer-center {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.social{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.social a{
+    font-size: 18px;
+    color: #f5efee;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social a:hover{
+    color: #333;
+}
+
+
+.footer-right{
+    display: flex;
+    align-content:flex-end;
+    margin-top: 75px;
+    
+}    
+.footer-right p {
+    color: #ffeaea;
+    font-size: 14px;
+    text-align: right;
+    transition: 0.3s ease;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        margin: 0;
+    }
+    p{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    nav .stranice {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    nav .stranice li {
+        margin: 8px 0;
+    }
+
+
+    input[type="text"], textarea {
+        width: 80%;
+    }
+
+    .footer {
+        display: flex;
+        height: 100px;
+    }
+    .footer-left{
+        justify-items: flex-start;
+        margin-left: -15px;
+        margin-bottom: 3px;
+    
+    }
+    .footer-left p {
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+    .dugme {
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+}
+
+
+
+@media (max-width: 375px) {
+
+    .dugme {
+        margin: 20px auto;
+    }
+
+    nav .stranice {
+        flex-direction: column;
+    }
+
+    nav .stranice li {
+        margin: 10px 0;
+    }
+
+    input[type="text"], textarea {
+        width: 80%;
+    }
+
+    .footer {
+        display: flex;
+        height: 80px;
+    }
+    .footer-left{
+        justify-items: flex-start;
+        margin-left: -25px;
+    }
+}
